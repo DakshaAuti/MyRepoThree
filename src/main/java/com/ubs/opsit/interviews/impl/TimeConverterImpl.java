@@ -10,23 +10,21 @@ public class TimeConverterImpl implements TimeConverter {
 		String berlinClockTime = null;
 		if (aTime != null && !aTime.isEmpty()) {
 
-			BerlinClockObject berlinClockObject = new BerlinClockObject();
-
 			String timeArr[] = aTime.split(":");
+			String headerRowValue = getHeaderRowOfBerlinClock(timeArr[2]);
 			String firstRowValue = getFirstRowOfBerlinClock(timeArr[0]);
 			String secondRowValue = getSecondRowOfBerlinClock(timeArr[0]);
 			String thirdRowValue = getThirdRowOfBerlinClock(timeArr[1]);
 			String fourthRowValue = getFourthRowOfBerlinClock(timeArr[1]);
-
-			System.out.println("firstRowValue = " + firstRowValue);
-			System.out.println("secondRowValue = " + secondRowValue);
-			System.out.println("thirdRowValue = " + thirdRowValue);
-			System.out.println("fourthRowValue = " + fourthRowValue);
-			
-			berlinClockObject.setFirstRow(firstRowValue);
-			berlinClockObject.setSecondRow(secondRowValue);
-			berlinClockObject.setThirdRow(thirdRowValue);
-			berlinClockObject.setFourthRow(fourthRowValue);
+		
+			StringBuilder strb = new StringBuilder();
+			strb.append(headerRowValue).append("\n");
+			strb.append(firstRowValue).append("\n");
+			strb.append(secondRowValue).append("\n");
+			strb.append(thirdRowValue).append("\n");
+			strb.append(fourthRowValue);
+			berlinClockTime = strb.toString();
+		
 		} else {
 			berlinClockTime = null;
 		}
@@ -74,9 +72,10 @@ public class TimeConverterImpl implements TimeConverter {
 
 	}
 
-	private String convrtMinToBerlnClkFormat(String string) {
-
-		return null;
+	private String getHeaderRowOfBerlinClock(String string) {
+		
+		Integer hoursP1 = Integer.parseInt(string)%2;		
+		return hoursP1 == 0 ? "Y" : "O";
 	}
 
 	public String getFirstRowOfBerlinClock(String hoursVar) {
@@ -106,13 +105,6 @@ public class TimeConverterImpl implements TimeConverter {
 
 	}
 
-	public Integer calculateMinutes() {
-		return null;
-	}
-
-	public Integer calculateSeconds() {
-		return null;
-	}
 
 	private String getBerlinTimeFormat(Character replaceChar, int count, int length) {
 		StringBuilder berlinClkNotation = new StringBuilder();
