@@ -16,9 +16,30 @@
 <div class="scenario">
 <h2>Scenario: Midnight</h2>
 <div class="step successful">When the time is <span class="step parameter">00:00:00</span></div>
-<div class="step failed">Then the clock should look like<br/>Y<br/>OOOO<br/>OOOO<br/>OOOOOOOOOOO<br/>OOOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
-<pre class="failure">java.lang.NullPointerException
-	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:34)
+<div class="step failed">Then the clock should look like<br/>Y<br/>OOOO<br/>OOOO<br/>OOOOOOOOOOO<br/>OOOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;&quot;[Y
+OOOO
+OOOO
+OOOOOOOOOOO]
+OOOO&quot;&gt; but was:&lt;&quot;[
+Y
+OOOO
+OOOO
+OOOOOOOOOOO]
+OOOO&quot;&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;&quot;[Y
+OOOO
+OOOO
+OOOOOOOOOOO]
+OOOO&quot;&gt; but was:&lt;&quot;[
+Y
+OOOO
+OOOO
+OOOOOOOOOOO]
+OOOO&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -41,9 +62,30 @@
 <div class="scenario">
 <h2>Scenario: Middle of the afternoon</h2>
 <div class="step successful">When the time is <span class="step parameter">13:17:01</span></div>
-<div class="step failed">Then the clock should look like<br/>O<br/>RROO<br/>RRRO<br/>YYROOOOOOOO<br/>YYOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
-<pre class="failure">java.lang.NullPointerException
-	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:34)
+<div class="step failed">Then the clock should look like<br/>O<br/>RROO<br/>RRRO<br/>YYROOOOOOOO<br/>YYOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;&quot;[O
+RROO
+RRRO
+YYROOOOOOOO]
+YYOO&quot;&gt; but was:&lt;&quot;[
+O
+RROO
+RRRO
+YYROOOOOOOO]
+YYOO&quot;&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;&quot;[O
+RROO
+RRRO
+YYROOOOOOOO]
+YYOO&quot;&gt; but was:&lt;&quot;[
+O
+RROO
+RRRO
+YYROOOOOOOO]
+YYOO&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -66,9 +108,30 @@
 <div class="scenario">
 <h2>Scenario: Just before midnight</h2>
 <div class="step successful">When the time is <span class="step parameter">23:59:59</span></div>
-<div class="step failed">Then the clock should look like<br/>O<br/>RRRR<br/>RRRO<br/>YYRYYRYYRYY<br/>YYYY <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
-<pre class="failure">java.lang.NullPointerException
-	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:34)
+<div class="step failed">Then the clock should look like<br/>O<br/>RRRR<br/>RRRO<br/>YYRYYRYYRYY<br/>YYYY <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;&quot;[O
+RRRR
+RRRO
+YYRYYRYYRYY]
+YYYY&quot;&gt; but was:&lt;&quot;[
+O
+RRRR
+RRRO
+YYRYYRYYRYY]
+YYYY&quot;&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;&quot;[O
+RRRR
+RRRO
+YYRYYRYYRYY]
+YYYY&quot;&gt; but was:&lt;&quot;[
+O
+RRRR
+RRRO
+YYRYYRYYRYY]
+YYYY&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -91,9 +154,30 @@
 <div class="scenario">
 <h2>Scenario: Midnight</h2>
 <div class="step successful">When the time is <span class="step parameter">24:00:00</span></div>
-<div class="step failed">Then the clock should look like<br/>Y<br/>RRRR<br/>RRRR<br/>OOOOOOOOOOO<br/>OOOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
-<pre class="failure">java.lang.NullPointerException
-	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:34)
+<div class="step failed">Then the clock should look like<br/>Y<br/>RRRR<br/>RRRR<br/>OOOOOOOOOOO<br/>OOOO <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;&quot;[Y
+RRRR
+RRRR
+OOOOOOOOOOO]
+OOOO&quot;&gt; but was:&lt;&quot;[
+Y
+RRRR
+RRRR
+OOOOOOOOOOO]
+OOOO&quot;&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;&quot;[Y
+RRRR
+RRRR
+OOOOOOOOOOO]
+OOOO&quot;&gt; but was:&lt;&quot;[
+Y
+RRRR
+RRRR
+OOOOOOOOOOO]
+OOOO&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at com.ubs.opsit.interviews.BerlinClockFixture.thenTheClockShouldLookLike(BerlinClockFixture.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
